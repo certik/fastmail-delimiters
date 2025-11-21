@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "FastMail Date Delimiters",
+  "version": "1.0",
+  "description": "Adds thick lines/delimiters between days in FastMail inbox, like Outlook.",
+  "content_scripts": [
+    {
+      "matches": ["https://app.fastmail.com/mail/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "https://app.fastmail.com/*"
+  ]
+}

@@ -1,0 +1,24 @@
+.date-divider {
+  border-top: 3px solid #007aff;
+  padding: 0 16px 0 0;
+  margin: 0;
+  background-color: rgba(0, 122, 255, 0.1);
+  text-align: right;
+  font-weight: bold;
+  color: #007aff;
+  font-size: 12px;
+  height: 24px;
+  line-height: 20px;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.week-divider {
+  border-top: 4px solid #999;
+  background-color: #e9e9e9;
+}
+
+.month-divider {
+  border-top: 5px solid #333;
+  background-color: #ddd;
+}
