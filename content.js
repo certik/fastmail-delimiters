@@ -41,7 +41,7 @@ function scheduleUpdate() {
   updateTimeout = setTimeout(() => {
     updateTimeout = null;
     executeUpdate();
-  }, 300);
+  }, 0); // Low delay for responsiveness while still batching rapid changes
 }
 
 // Execution wrapper with lock and RAF for stable layout
