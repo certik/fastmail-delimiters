@@ -1,8 +1,14 @@
 {
   "manifest_version": 2,
   "name": "FastMail Date Delimiters",
-  "version": "1.0",
-  "description": "Adds thick lines/delimiters between days in FastMail inbox, like Outlook.",
+  "version": "1.0.0",
+  "description": "Adds visual date separators between days in FastMail inbox, making it easier to navigate your emails.",
+  "author": "Ondřej Čertík",
+  "homepage_url": "https://github.com/certik/fastmail-delimiters",
+  "icons": {
+    "48": "icon-48.png",
+    "96": "icon-96.png"
+  },
   "content_scripts": [
     {
       "matches": ["https://app.fastmail.com/mail/*"],
