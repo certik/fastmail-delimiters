@@ -2,6 +2,7 @@
   border-top: 3px solid #176bad;
   padding: 0 16px 0 0;
   margin: 0;
+  background-color: rgba(0, 122, 255, 0.05);
   text-align: right;
   height: 24px;
   line-height: 20px;
@@ -15,9 +16,10 @@
   color: white;
   font-weight: bold;
   font-size: 12px;
-  padding: 4px 12px;
-  border-radius: 12px;
+  padding: 2px 12px 4px 12px;
+  border-radius: 0 0 12px 12px;
   line-height: 14px;
+  margin-top: -3px;
 }
 
 .week-divider {
