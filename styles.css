@@ -4,8 +4,8 @@
   margin: 0;
   background-color: rgba(0, 122, 255, 0.05);
   text-align: right;
-  height: 24px;
-  line-height: 20px;
+  height: 12px;
+  line-height: 12px;
   box-sizing: border-box;
   pointer-events: none;
 }
