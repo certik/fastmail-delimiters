@@ -1,16 +1,25 @@
 .date-divider {
-  border-top: 3px solid #007aff;
+  border-top: 3px solid #176bad;
   padding: 0 16px 0 0;
   margin: 0;
-  background-color: rgba(0, 122, 255, 0.1);
+  background-color: rgba(0, 122, 255, 0.05);
   text-align: right;
-  font-weight: bold;
-  color: #007aff;
-  font-size: 12px;
-  height: 24px;
-  line-height: 20px;
+  height: 12px;
+  line-height: 12px;
   box-sizing: border-box;
   pointer-events: none;
+}
+
+.date-label {
+  display: inline-block;
+  background-color: #176bad;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 2px 12px 4px 12px;
+  border-radius: 0 0 12px 12px;
+  line-height: 14px;
+  margin-top: -3px;
 }
 
 .week-divider {

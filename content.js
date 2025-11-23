@@ -216,7 +216,10 @@ function reconcileDelimiters(desiredDelimiters) {
     const data = delimiterRegistry.get(key);
     if (data && data.element) {
       data.element.style.top = desired.position + 'px';
-      data.element.textContent = desired.dateLabel;
+      const labelSpan = data.element.querySelector('.date-label');
+      if (labelSpan) {
+        labelSpan.textContent = desired.dateLabel;
+      }
       data.position = desired.position;
       data.dateLabel = desired.dateLabel;
       console.log('[FastMail Delimiters] Updated delimiter:', key);
@@ -227,7 +230,13 @@ function reconcileDelimiters(desiredDelimiters) {
   toAdd.forEach(({ key, position, dateLabel }) => {
     const divider = document.createElement('div');
     divider.className = 'date-divider';
-    divider.textContent = dateLabel;
+
+    // Create a span for the date label
+    const labelSpan = document.createElement('span');
+    labelSpan.className = 'date-label';
+    labelSpan.textContent = dateLabel;
+    divider.appendChild(labelSpan);
+
     divider.style.position = 'absolute';
     divider.style.top = position + 'px';
     divider.style.left = '0px';
